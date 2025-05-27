@@ -3,24 +3,24 @@
         "id":1,
       "name": "Donald Jackman",
       "post": "Marketing Manager",
-      "ratings": "5 star",
-      "image": "/images/project_img_1.jpg",
+      "ratings": "5",
+      "image": "/images/review_1.png",
       "rivew":"From the very first meeting, they understood my vision and helped me find the perfect property. Their attention to detail and commitment to client satisfaction is unmatched."
     },
     {
         "id":2,
       "name": "Richard Nelson",
       "post": "UI/UX Designer",
-      "ratings": "4 star",
-      "image": "/images/project_img_1.jpg",
+      "ratings": "4",
+      "image": "/images/review_2.png",
       "rivew":"From the very first meeting, they understood my vision and helped me find the perfect property. Their attention to detail and commitment to client satisfaction is unmatched."
     },
     {
         "id":3,
       "name": "James Washington",
       "post": "Co-Founder",
-      "ratings": "5 star",
-      "image": "/images/project_img_1.jpg",
+      "ratings": "5",
+      "image": "/images/review_3.png",
       "rivew":"From the very first meeting, they understood my vision and helped me find the perfect property. Their attention to detail and commitment to client satisfaction is unmatched."
     }
   ]

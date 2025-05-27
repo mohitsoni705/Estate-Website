@@ -1,6 +1,5 @@
 import React from 'react';
 import './ProjectCard.css'; // Import the CSS file
-
 const ProjectCard = ({ title, price, place, productImage }) => {
   return (
     <div className="project-card">

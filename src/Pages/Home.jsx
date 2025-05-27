@@ -16,11 +16,11 @@ const Home = () => {
                 </button>
             </div>
             <div className="box2">
-                <button className="btn-2 ">
                     <NavLink to="/contactForm">
+               <button className="btn-2">
                     Contact Us
-                    </NavLink>
                 </button>
+                    </NavLink>
             </div>
         </div>
         </div>

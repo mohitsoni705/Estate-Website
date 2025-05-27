@@ -95,7 +95,6 @@ li:hover{
 }
 /* //About  */
 .container-about{
-  height: 100vh;
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -163,9 +162,9 @@ li:hover{
   margin-left: 2rem;
 }
 .container-project{
-  height: 100vh;
   background-color: #fff;
   display: flex;
+  gap:5rem;
   flex-direction: column;
   justify-content:space-around;
   align-items: center;
@@ -178,6 +177,7 @@ li:hover{
 }
 /* //Contact Form Css */
 .container-form {
+  gap:5rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -224,4 +224,47 @@ button.btn-2 {
 
 button.btn-2:hover {
   background-color: #0056b3;
+}
+.testimonials{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap:2rem;
+}
+.testimonial-card {
+  width: 300px;
+  padding: 20px;
+  border-radius: 15px;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.testimonial-card h1 {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 0;
+}
+
+.testimonial-card p {
+  color: #666;
+  font-size: 0.95rem;
+  margin: 8px 0;
 }

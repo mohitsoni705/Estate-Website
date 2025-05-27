@@ -1,5 +1,6 @@
 import React from 'react'
 import TestimonialsCards from "../api/TestimonialsCards.json"
+import TestimonialCard from '../components/TestimonialCard'
 const Testimonials = () => {
   return (
     <div className="container-form">
@@ -10,11 +11,13 @@ const Testimonials = () => {
         </div>
         <div>
         <p className='about-para'>Real Stories from Those Who Found Home with Us</p>
-        </div>
+        </div>  
       </div>
       {/* Customer Section */}
       <div className="testimonials">
-
+        {TestimonialsCards.map((curElem)=>{
+          return <TestimonialCard key={curElem.id} {...curElem}/>
+        })}
       </div>
     </div>
   )
