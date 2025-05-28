@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
-import NavRight from './Navright'
-import { RxHamburgerMenu } from 'react-icons/rx'
+import Navright from './Navright';
 import { GiHamburgerMenu } from 'react-icons/gi'
 
 const Header = () => {
@@ -32,7 +31,7 @@ const Header = () => {
         <div className='mobile-links'>
            <GiHamburgerMenu onClick={handleToggleChange}/>
             <div className={!toggle?"none":"display"}>
-            <NavRight/>
+            <Navright/>
             </div>
             </div>
     </header>

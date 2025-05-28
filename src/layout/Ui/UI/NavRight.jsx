@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
-const NavRight = () => {
+const Navright = () => {
   return (
     <>
        <div className="right-links">
@@ -19,4 +19,4 @@ const NavRight = () => {
   )
 }
 
-export default NavRight
+export default Navright
