@@ -15,6 +15,7 @@ header{
   align-items: center;
   flex-direction: row;
   color:white;
+  padding:0 1rem;
 }
 a{
   text-decoration: none;
@@ -61,9 +62,8 @@ body{
   gap:2rem;
 }
 .para p{
-  font-family:"roboto";
   font-size:6rem;
-  font-weight: 900;
+  font-weight:800;
   color: white;
   width:50rem;
   text-align: center;
@@ -235,10 +235,10 @@ button.btn-2:hover {
   background-color: #0056b3;
 }
 .testimonials{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap:2rem;
+ display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
 }
 .testimonial-card {
   width: 300px;
@@ -275,32 +275,44 @@ button.btn-2:hover {
 .testimonial-card p {
   color: #666;
   font-size: 0.95rem;
-  margin: 8px 0;
+  margin: 0;
 }
 .mobile-links{
   display: none;
-}
-@media (max-width:600px){
-  .nav-links{
-    display: none;
-  }
-  .mobile-links{
-    display: flex;
-  }
-.para p{
-  font-size: 1rem;
-}
-.sign-up{
-  display: none;
-}
-header{
-  display: flex;
-  justify-content:space-around
-}
 }
 .display{
   display: flex;
 }
 .none{
   display: none;
+}
+@media (max-width:600px){
+  header{
+    justify-content: space-between;
+    margin-inline: 1rem;
+  }
+  .nav-links{
+    display: none;
+  }
+  .para p {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+  .mobile-links{
+    display: flex;
+  }
+  .details {
+    flex-direction: column;
+  } 
+.para p{
+  font-size: 1rem;
+}
+.sign-up{
+  display: none;
+}
+.testimonial-card{
+  width: 250px;
+  padding: auto;
+}
+
 }

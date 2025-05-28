@@ -16,7 +16,7 @@ const Header = () => {
   return (
     <header>
         <div className="logo">
-            <h1>ESTATE</h1>
+            <NavLink to="/"><h1>ESTATE</h1></NavLink>
         </div>
         <div className="nav-links">
             <ul>
