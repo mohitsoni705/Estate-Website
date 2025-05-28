@@ -1,7 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
+import NavRight from './Navright'
+import { RxHamburgerMenu } from 'react-icons/rx'
+import { GiHamburgerMenu } from 'react-icons/gi'
 
 const Header = () => {
+    const [toggle,setToggle]=useState(false)
+    const handleToggleChange=()=>{
+       if(!toggle){
+        setToggle(true)
+       }else{
+        setToggle(false)
+       }
+    }
   return (
     <header>
         <div className="logo">
@@ -18,6 +29,12 @@ const Header = () => {
         <div className="sign-up">
             <button className='btn-signIn'><NavLink to="signup">Sign Up</NavLink></button>
         </div>
+        <div className='mobile-links'>
+           <GiHamburgerMenu onClick={handleToggleChange}/>
+            <div className={!toggle?"none":"display"}>
+            <NavRight/>
+            </div>
+            </div>
     </header>
   )
 }

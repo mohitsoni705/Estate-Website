@@ -11,9 +11,11 @@ const Home = () => {
         </div>
         <div className="two-box">
             <div className="box1">
+                <NavLink to="/project">
                 <button className="btn-1">
                     Projects
                 </button>
+                </NavLink>
             </div>
             <div className="box2">
                     <NavLink to="/contactForm">
