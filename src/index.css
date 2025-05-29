@@ -13,9 +13,11 @@ header{
   display: flex;
   justify-content:space-evenly;
   align-items: center;
+  padding:0 1rem;
   flex-direction: row;
   color:white;
   padding:0 1rem;
+  z-index: 100;
 }
 a{
   text-decoration: none;
@@ -30,7 +32,7 @@ ul{
   display: flex;
   flex-direction: row;
   gap:2rem;
-  margin-left:2rem;
+  margin-inline: 2rem;
 }
 li:hover{
   text-decoration: underline;
@@ -277,42 +279,72 @@ button.btn-2:hover {
   font-size: 0.95rem;
   margin: 0;
 }
-.mobile-links{
+
+.hamburger-icon{
   display: none;
 }
-.display{
+/* Mobile Menu  */
+.mobile-menu{
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  width:100%;
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 2rem 1rem;
+  z-index: 999;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
 }
-.none{
+.mobile-menu ul {
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+.right-links {
   display: none;
+}
+.hamburger-icon {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: white;
 }
 @media (max-width:600px){
   header{
     justify-content: space-between;
     margin-inline: 1rem;
   }
-  .nav-links{
+  .nav-links , .sign-up{
     display: none;
   }
   .para p {
     font-size: 1.2rem;
     width: 100%;
   }
-  .mobile-links{
-    display: flex;
-  }
   .details {
     flex-direction: column;
   } 
-.para p{
+  .para p{
   font-size: 1rem;
 }
-.sign-up{
+ .sign-up{
   display: none;
 }
-.testimonial-card{
+ .testimonial-card{
   width: 250px;
-  padding: auto;
 }
-
+.hamburger-icon{
+  display:block;
+}
+.right-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .flex-row{
+    font-size:1rem;
+  }
 }
