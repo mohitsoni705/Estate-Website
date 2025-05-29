@@ -8,6 +8,9 @@ const Header = () => {
     const handleToggleChange=()=>{
        setToggle(!toggle)
     }
+    const closeMobileMenu=()=>{
+      setToggle(false)
+    }
   return (
     <header>
         <div className="logo">
@@ -32,7 +35,7 @@ const Header = () => {
 
         {toggle && (
         <div className="mobile-menu">
-          <Navright setToggle={setToggle} />
+          <Navright closeMenu={closeMobileMenu} />
         </div>
       )}
     </header>
