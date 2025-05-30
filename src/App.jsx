@@ -6,6 +6,7 @@ import About from './Pages/About'
 import AppLayout from './layout/Ui/AppLayout'
 import Testimonials from './Pages/Testimonials'
 import ContactForm from './Pages/ContactForm'
+import SignUp from './Pages/SignUp'
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path:"/contactForm",
         element:<ContactForm/>
+      },
+      {
+        path:"/sign-up",
+        element:<SignUp/>
       },
     ]
   }

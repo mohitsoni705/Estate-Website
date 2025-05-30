@@ -26,7 +26,7 @@ const Header = () => {
         </nav>
 
         <div className="sign-up">
-            <button className='btn-signIn'><NavLink to="signup">Sign Up</NavLink></button>
+            <button className='btn-signIn'><NavLink to="sign-up">Sign Up</NavLink></button>
         </div>
 
         <div className='hamburger-icon'>

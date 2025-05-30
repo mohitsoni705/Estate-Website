@@ -1,30 +1,29 @@
-import React from 'react'
-import styles from "../Css/SignUp.module.css"
-
+import React from 'react';
 const SignUp = () => {
   return (
-    <div className={styles.containerSignup}>
-      <div className={styles.login_form}>
-        <div>
-        <h1>Login Account</h1>
+    <div className="container-signup">
+      <h1 className="signup-logo">Estate</h1>
+
+      <div className="signup-header">
+        <p className="signup-welcome">Welcome!</p>
+        <p className="signup-subtext">Please enter your account details</p>
       </div>
-      <form>
-        <input type="text" name="usename" placeholder='User Name or E-mail' />
-        <input type="password" name="usename" placeholder='Password' />
-      </form>
-      <div>Forget password ?</div>
-      <div>
-        <button>Log in</button>
+
+      <div className="signup-form">
+        <label>Email</label>
+        <input type="email" placeholder="abc@gmail.com" />
+
+        <label>Password</label>
+        <input type="password" placeholder="your password" />
       </div>
-        </div>
-      <div>
-        <div>
-          <h1>Already have an account ?</h1>
-          <button>Register</button>
-        </div>
+
+      <div className="signup-actions">
+        <button className="signup-btn">Sign Up</button>
+        <div className="signup-divider">or</div>
+        <button className="google-signup-btn">Sign up with Google</button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default SignUp
+export default SignUp;

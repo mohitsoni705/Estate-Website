@@ -10,7 +10,7 @@ const Navright = ({closeMenu}) => {
                       <li><NavLink to="/about" onClick={closeMenu}>ABOUT</NavLink></li>
                       <li><NavLink to="/project" onClick={closeMenu}>PROJECTS</NavLink></li>
                       <li><NavLink to="/testimonials" onClick={closeMenu}>TESTMONIALS</NavLink></li>
-                      <li><NavLink to="signup" onClick={closeMenu}>Sign Up</NavLink></li>
+                      <li><NavLink to="sign-up" onClick={closeMenu}>Sign Up</NavLink></li>
                   </ul>
               </div>
               </>
