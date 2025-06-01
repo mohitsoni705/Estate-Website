@@ -22,6 +22,14 @@ header{
 a{
   text-decoration: none;
   color:white;
+  -webkit-tap-highlight-color: transparent;
+}
+a:active,
+a:active,
+img:focus,
+img:active{
+  outline:none;
+  background:transparent ;
 }
 h1,h2,h3,h4,h5,h6{
   color:white;
@@ -426,15 +434,11 @@ button.btn-2:hover {
   .nav-links , .sign-up{
     display: none;
   }
-  .para p {
-    font-size: 1.2rem;
-    width: 100%;
-  }
   .details {
     flex-direction: column;
   } 
   .para p{
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
  .sign-up{
   display: none;
